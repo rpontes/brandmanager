@@ -1,0 +1,91 @@
+html {
+  background: #d8dde3 url(bg.png);
+  color: #202020;
+  padding: 30px;
+}
+
+body {
+  font: 14px/1.4 "Lucida Grande", Verdana, sans-serif;
+  margin: 0 auto;
+}
+
+p + p {
+  margin-top: 20px;
+}
+
+.content {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+body > header {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+body > header nav {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+body > header nav li {
+  float: left;
+  list-style: none;
+  margin-left: 10px;
+}
+
+body > header nav a {
+  color: #5e6a77;
+  font-weight: bold;
+}
+
+.main {
+  padding: 30px;
+}
+
+a {
+  color: #045dcd;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+.form-errors p {
+  color: #c33a0a;
+  font-weight: bold;
+}
+
+.form-errors ul {
+  margin: 15px 0 15px 30px;
+}
+
+.message {
+  border-radius: 4px;
+  font-weight: bold;
+  margin: 20px 0;
+  padding: 15px 20px 15px 60px;
+
+}
+
+.message.notice {
+  background: #81ca6c url(notice.png) no-repeat 20px center;
+  color: #000;
+  color: rgba(0, 0, 0, .6);
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, .5);
+}
+
+.message.alert {
+  background: #cb4617 url(alert.png) no-repeat 20px center;
+  color: #000;
+  color: rgba(255, 255, 255, .9);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, .2);
+}
+
+label {
+  display: block;
+  padding-bottom: 5px;
+}
