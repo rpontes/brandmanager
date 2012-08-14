@@ -1,0 +1,5 @@
+<h1><%= t("title.admin.clients.new") %></h1>
+
+<%= form_for @client, :url => admin_clients_path do |f| %>
+  <%= render f %>
+<% end %>

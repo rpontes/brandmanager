@@ -1,0 +1,16 @@
+<%= render "shared/error_messages", :record => form.object %>
+
+<p>
+  <%= form.label :name, t("form.client.name") %>
+  <%= form.text_field :name %>
+</p>
+
+<p>
+  <%= form.label :telephone, t("form.client.telephone") %>
+  <%= form.text_field :telephone %>
+</p>
+
+<p>
+  <%= form.submit %>
+  <%= link_to t("actions.back"), admin_clients_path %>
+</p>

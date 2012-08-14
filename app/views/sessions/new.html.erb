@@ -1,0 +1,22 @@
+<h1><%= t("title.sessions.new") %></h1>
+
+<p>
+  <%= t("login.about_html", :url => signup_path) %>
+</p>
+
+<%= form_tag login_path do %>
+  <p>
+    <%= label_tag :email, t("form.user.email") %>
+    <%= email_field_tag :email, params[:email] %>
+  </p>
+
+  <p>
+    <%= label_tag :password, t("form.user.password") %>
+    <%= password_field_tag :password %>
+  </p>
+
+  <p>
+    <%= submit_tag t("form.submit.login") %>
+    <%= link_to t("actions.back"), root_path %>
+  </p>
+<% end %>

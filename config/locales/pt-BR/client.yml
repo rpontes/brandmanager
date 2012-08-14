@@ -1,0 +1,12 @@
+pt-BR:
+  client:
+    prompt_field: "-- Selecione um cliente --"
+
+    admin:
+      add: "Adicionar cliente"
+      confirm_remove_html: |
+        Tem certeza que deseja remover o
+        cliente <strong>%{name}</strong>?
+        <br>
+        Não será possível desfazer esta ação!
+      yes_i_want_to_remove: "Sim, eu quero remover!"

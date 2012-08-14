@@ -1,0 +1,12 @@
+<h1><%= t("title.admin.clients.remove", :name => @client.name) %></h1>
+
+<p>
+  <%= t("client.admin.confirm_remove_html", :name => @client.name) %>
+</p>
+
+<%= form_tag admin_client_path(@client), :method => :delete do %>
+  <p>
+    <%= submit_tag t("client.admin.yes_i_want_to_remove") %>
+    <%= link_to t("actions.cancel"), admin_clients_path %>
+  </p>
+<% end %>

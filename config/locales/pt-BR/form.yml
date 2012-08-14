@@ -1,0 +1,21 @@
+pt-BR:
+  form:
+    error_messages: "Verifique o formulário antes de continuar:"
+
+    submit:
+      login: "Acessar minha conta"
+
+    user:
+      email: "Seu e-mail"
+      name: "Seu nome"
+      password: "Sua senha"
+      password_confirmation: "Confirme sua senha"
+
+    client:
+      name: "Nome"
+      telephone: "Telefone"
+
+  helpers:
+    submit:
+      user:
+        create: "Quero me cadastrar"

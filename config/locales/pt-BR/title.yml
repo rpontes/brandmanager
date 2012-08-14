@@ -1,0 +1,12 @@
+pt-BR:
+  title:
+    users:
+      new: "Cadastre-se agora!"
+
+    sessions:
+      new: "Acesse sua conta!"
+
+    admin:
+      clients:
+      index: "Clientes"
+      new: "Criar Cliente"

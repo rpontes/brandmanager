@@ -1,0 +1,45 @@
+<h1><%= t("title.users.new") %></h1>
+
+<p>
+  <%= t("signup.about_html", :url => login_path) %>
+</p>
+
+<%= form_for @user, :url => signup_path do |f| %>
+  <% if @user.errors.any? %>
+    <div class="form-errors">
+      <p><%= t("form.error_messages") %></p>
+
+      <ul>
+        <% @user.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <p>
+    <%= f.label :name, t("form.user.name") %>
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.label :email, t("form.user.email") %>
+    <%= f.email_field :email %>
+  </p>
+
+  <p>
+    <%= f.label :password, t("form.user.password") %>
+    <%= f.password_field :password %>
+  </p>
+
+  <p>
+    <%= f.label :password_confirmation,
+      t("form.user.password_confirmation") %>
+    <%= f.password_field :password_confirmation %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+    <%= link_to t("actions.back"), root_path %>
+  </p>
+<% end %>

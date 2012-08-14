@@ -1,0 +1,11 @@
+<header>
+  <%= link_to image_tag("logo.png", :alt => "Brandmanager"), root_path %>
+
+  <% if logged_in? %>
+    <p>
+      <%= t("login.welcome", :name => current_user.name) %>
+    </p>
+  <% end %>
+
+  <%= render "shared/nav" %>
+</header>

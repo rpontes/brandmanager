@@ -1,0 +1,17 @@
+pt-BR:
+  flash:
+    users:
+      create:
+        notice: "Sua conta foi criada com sucesso!"
+
+    sessions:
+      create:
+        alert: "E-mail/senha inválidos"
+
+    clients:
+      create:
+        notice: "Cliente criado com sucesso!"
+      update:
+        notice: "Cliente atualizado com sucesso!"
+      destroy:
+        notice: "O cliente '%{name}' foi removido"

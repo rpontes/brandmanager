@@ -1,0 +1,13 @@
+<h1><%= t("title.admin.clients.index") %></h1>
+<p>
+  <%= link_to t("client.admin.add"), new_admin_client_path %>
+</p>
+
+<% @clients.each do |client| %>
+  <p>
+    <%= client.name %> - <%= client.telephone %> <br>
+
+    <%= link_to t("actions.edit"), edit_admin_client_path(client) %>
+    <%= link_to t("actions.remove"), remove_admin_client_path(client) %>
+  </p>
+<% end %>

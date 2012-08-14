@@ -1,0 +1,25 @@
+<nav>
+  <ul>
+    <li>
+      <%= link_to t("menu.add_brand") %>
+    </li>
+
+    <li>
+      <%= link_to t("menu.add_client"), admin_clients_path %>
+    </li>
+
+    <% if logged_in? %>
+      <li>
+        <%= link_to t("menu.logout"), logout_path %>
+      </li>
+    <% else %>
+      <li>
+        <%= link_to t("menu.login"), login_path %>
+      </li>
+
+      <li>
+        <%= link_to t("menu.signup"), signup_path %>
+      </li>
+    <% end %>
+  </ul>
+</nav>
