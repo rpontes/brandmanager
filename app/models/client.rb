@@ -1,3 +1,8 @@
 class Client < ActiveRecord::Base
-  # attr_accessible :title, :body
+  attr_accessible :name, :telephone
+
+  validates_presence_of :name
+
+  scope :sorted_by_name, order("name asc")
+
 end

@@ -7,5 +7,12 @@ Brandmanager::Application.routes.draw do
 	get "/login", :to => "sessions#new"
 	post "/login", :to => "sessions#create"
   get "/logout", :to => "sessions#destroy"
-  
+
+	resources :clients
+
+	namespace :admin do
+		resources :clients do
+			get :remove, :on => :member
+		end
+	end	
 end

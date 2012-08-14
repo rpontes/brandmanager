@@ -289,3 +289,1702 @@ Migrating to CreateClients (20120809040846)
   [1m[36m (0.8ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120809040846')[0m
   [1m[35m (0.1ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
 Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (1.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateUsers (20120801025406)
+Migrating to CreateBrands (20120809040610)
+Migrating to CreateClients (20120809040846)
+  [1m[35m (0.1ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 10.0.2.2 at 2012-08-10 03:45:32 +0200
+
+AbstractController::ActionNotFound (The action 'index' could not be found for BrandsController):
+  actionpack (3.2.6) lib/abstract_controller/base.rb:116:in `process'
+  actionpack (3.2.6) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.6) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.6) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.6) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.6) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `_run__161825207__call__371604393__callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/vagrant/local/ruby/1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/vagrant/local/ruby/1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/vagrant/local/ruby/1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (6.2ms)
+
+
+Started GET "/" for 10.0.2.2 at 2012-08-10 03:46:15 +0200
+Processing by BrandsController#index as HTML
+  Rendered brands/index.html.erb within layouts/application (0.3ms)
+Compiled shared.css  (1ms)  (pid 1005)
+Compiled common.css  (1ms)  (pid 1005)
+Compiled site.css  (1ms)  (pid 1005)
+Compiled application.css  (150ms)  (pid 1005)
+Completed 500 Internal Server Error in 330ms
+
+ActionView::Template::Error (Missing partial shared/header with {:locale=>[:"pt-BR"], :formats=>[:html], :handlers=>[:erb, :builder]}. Searched in:
+  * "/vagrant/brandmanager/app/views"
+):
+    9:   </head>
+    10: 
+    11:   <body>
+    12:     <%= render "shared/header" %>
+    13:     <%= render "shared/flash_messages" %>
+    14: 
+    15:     <div class="content">
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___157878088_77512410'
+
+
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.1ms)
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.1ms)
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.4ms)
+
+
+Started GET "/login" for 10.0.2.2 at 2012-08-10 03:46:34 +0200
+Processing by SessionsController#new as HTML
+Completed 500 Internal Server Error in 12ms
+
+ActionView::MissingTemplate (Missing template sessions/new, application/new with {:locale=>[:"pt-BR"], :formats=>[:html], :handlers=>[:erb, :builder]}. Searched in:
+  * "/vagrant/brandmanager/app/views"
+):
+  actionpack (3.2.6) lib/action_view/path_set.rb:58:in `find'
+  actionpack (3.2.6) lib/action_view/lookup_context.rb:109:in `find'
+  actionpack (3.2.6) lib/action_view/renderer/abstract_renderer.rb:3:in `find_template'
+  actionpack (3.2.6) lib/action_view/renderer/template_renderer.rb:34:in `determine_template'
+  actionpack (3.2.6) lib/action_view/renderer/template_renderer.rb:10:in `render'
+  actionpack (3.2.6) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.6) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.6) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.6) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.6) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.6) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.6) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.6) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.6) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.6) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.6) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /home/vagrant/local/ruby/1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (3.2.6) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.6) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.6) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.6) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.6) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.6) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.6) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.6) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.6) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:414:in `_run__894778326__process_action__313005554__callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.6) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.6) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.6) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.6) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.6) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.6) lib/action_controller/metal/params_wrapper.rb:206:in `process_action'
+  activerecord (3.2.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.6) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.6) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.6) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.6) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.6) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.6) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `_run__161825207__call__371604393__callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/vagrant/local/ruby/1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/vagrant/local/ruby/1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/vagrant/local/ruby/1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.4ms)
+
+
+Started GET "/login" for 10.0.2.2 at 2012-08-10 03:48:38 +0200
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/window (132.5ms)
+Compiled window.css  (11ms)  (pid 1005)
+Completed 500 Internal Server Error in 269ms
+
+ActionView::Template::Error (Missing partial shared/flash_messages with {:locale=>[:"pt-BR"], :formats=>[:html], :handlers=>[:erb, :builder]}. Searched in:
+  * "/vagrant/brandmanager/app/views"
+):
+    11:       <%= link_to image_tag("logo.png", :alt => "BrandManager"), root_path %>
+    12:     </header>
+    13: 
+    14:     <%= render "shared/flash_messages" %>
+    15: 
+    16:     <div class="content">
+    17:       <section class="main">
+  app/views/layouts/window.html.erb:14:in `_app_views_layouts_window_html_erb__735725517_88986750'
+
+
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.1ms)
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.6ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/login" for 10.0.2.2 at 2012-08-10 03:56:27 +0200
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/window (154.4ms)
+Completed 500 Internal Server Error in 296ms
+
+ActionView::Template::Error (Missing partial shared/flash_messages with {:locale=>[:"pt-BR"], :formats=>[:html], :handlers=>[:erb, :builder]}. Searched in:
+  * "/vagrant/brandmanager/app/views"
+):
+    11:       <%= link_to image_tag("logo.png", :alt => "BrandManager"), root_path %>
+    12:     </header>
+    13: 
+    14:     <%= render "shared/flash_messages" %>
+    15: 
+    16:     <div class="content">
+    17:       <section class="main">
+  app/views/layouts/window.html.erb:14:in `_app_views_layouts_window_html_erb___846695734_69987950'
+
+
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.2ms)
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.8ms)
+
+
+Started GET "/login" for 10.0.2.2 at 2012-08-10 03:57:03 +0200
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/window (1.5ms)
+  Rendered shared/_flash_messages.html.erb (0.5ms)
+Completed 200 OK in 37ms (Views: 36.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/window.css?body=1" for 10.0.2.2 at 2012-08-10 03:57:03 +0200
+Served asset /window.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/common.css?body=1" for 10.0.2.2 at 2012-08-10 03:57:04 +0200
+Served asset /common.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/shared.css?body=1" for 10.0.2.2 at 2012-08-10 03:57:04 +0200
+Served asset /shared.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/logo.png" for 10.0.2.2 at 2012-08-10 03:57:04 +0200
+Served asset /logo.png - 304 Not Modified (58ms)
+
+
+Started GET "/assets/bg.png" for 10.0.2.2 at 2012-08-10 03:57:04 +0200
+Served asset /bg.png - 304 Not Modified (49ms)
+
+
+Started POST "/login" for 10.0.2.2 at 2012-08-10 03:57:11 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fNT9fHT1bXGSidFa4Mq0DatUTxI5azaRFRC/kiSgUEc=", "email"=>"rpontes@gmail.com", "password"=>"[FILTERED]", "commit"=>"<span class="}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'rpontes@gmail.com' LIMIT 1[0m
+  Rendered sessions/new.html.erb within layouts/window (1.6ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 201ms (Views: 37.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/window.css?body=1" for 10.0.2.2 at 2012-08-10 03:57:11 +0200
+Served asset /window.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/common.css?body=1" for 10.0.2.2 at 2012-08-10 03:57:11 +0200
+Served asset /common.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shared.css?body=1" for 10.0.2.2 at 2012-08-10 03:57:11 +0200
+Served asset /shared.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/logo.png" for 10.0.2.2 at 2012-08-10 03:57:11 +0200
+Served asset /logo.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/alert.png" for 10.0.2.2 at 2012-08-10 03:57:11 +0200
+Served asset /alert.png - 200 OK (39ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 10.0.2.2 at 2012-08-10 04:00:41 +0200
+Processing by BrandsController#index as HTML
+  Rendered brands/index.html.erb within layouts/application (21.9ms)
+  Rendered shared/_header.html.erb (70.1ms)
+Completed 500 Internal Server Error in 220ms
+
+ActionView::Template::Error (undefined method `logged_in?' for #<#<Class:0xa706f98>:0xa615774>):
+    1: <header>
+    2:   <%= link_to image_tag("logo.png", :alt => "Hackerboard"), root_path %>
+    3: 
+    4:   <% if logged_in? %>
+    5:     <p>
+    6:       <%= t("login.welcome", :name => current_user.name) %>
+    7:     </p>
+  app/views/shared/_header.html.erb:4:in `_app_views_shared__header_html_erb__814036008_75389040'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___539334408_75488730'
+
+
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.4ms)
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.9ms)
+
+
+Started GET "/" for 10.0.2.2 at 2012-08-10 04:03:52 +0200
+Processing by BrandsController#index as HTML
+  Rendered brands/index.html.erb within layouts/application (0.1ms)
+  Rendered shared/_nav.html.erb (115.4ms)
+  Rendered shared/_header.html.erb (128.1ms)
+  Rendered shared/_flash_messages.html.erb (0.5ms)
+Compiled application.js  (24ms)  (pid 1085)
+Completed 200 OK in 288ms (Views: 287.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2012-08-10 04:03:53 +0200
+Served asset /application.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/shared.css?body=1" for 10.0.2.2 at 2012-08-10 04:03:53 +0200
+Served asset /shared.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/common.css?body=1" for 10.0.2.2 at 2012-08-10 04:03:53 +0200
+Served asset /common.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/site.css?body=1" for 10.0.2.2 at 2012-08-10 04:03:53 +0200
+Served asset /site.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/logo.png" for 10.0.2.2 at 2012-08-10 04:03:53 +0200
+Served asset /logo.png - 304 Not Modified (9ms)
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2012-08-10 04:03:53 +0200
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bg.png" for 10.0.2.2 at 2012-08-10 04:03:53 +0200
+Served asset /bg.png - 304 Not Modified (7ms)
+
+
+Started GET "/assets/sidebar-bg.png" for 10.0.2.2 at 2012-08-10 04:03:53 +0200
+Served asset /sidebar-bg.png - 304 Not Modified (49ms)
+
+
+Started GET "/" for 10.0.2.2 at 2012-08-10 04:06:46 +0200
+Processing by BrandsController#index as HTML
+  Rendered brands/index.html.erb within layouts/application (0.1ms)
+  Rendered shared/_nav.html.erb (141.8ms)
+  Rendered shared/_header.html.erb (152.6ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 211ms (Views: 211.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/common.css?body=1" for 10.0.2.2 at 2012-08-10 04:06:46 +0200
+Served asset /common.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2012-08-10 04:06:46 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2012-08-10 04:06:46 +0200
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/logo.png" for 10.0.2.2 at 2012-08-10 04:06:49 +0200
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/site.css?body=1" for 10.0.2.2 at 2012-08-10 04:06:49 +0200
+Served asset /site.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shared.css?body=1" for 10.0.2.2 at 2012-08-10 04:06:49 +0200
+Served asset /shared.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2012-08-10 04:07:25 +0200
+Processing by BrandsController#index as HTML
+  Rendered brands/index.html.erb within layouts/application (0.1ms)
+  Rendered shared/_nav.html.erb (130.4ms)
+  Rendered shared/_header.html.erb (141.4ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 194ms (Views: 193.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/common.css?body=1" for 10.0.2.2 at 2012-08-10 04:07:26 +0200
+Served asset /common.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/site.css?body=1" for 10.0.2.2 at 2012-08-10 04:07:26 +0200
+Served asset /site.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shared.css?body=1" for 10.0.2.2 at 2012-08-10 04:07:26 +0200
+Served asset /shared.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 10.0.2.2 at 2012-08-10 04:07:26 +0200
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2012-08-10 04:07:26 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2012-08-10 04:07:26 +0200
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/signup" for 10.0.2.2 at 2012-08-10 04:07:38 +0200
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/window (4.4ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 123ms (Views: 56.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/window.css?body=1" for 10.0.2.2 at 2012-08-10 04:07:38 +0200
+Served asset /window.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/shared.css?body=1" for 10.0.2.2 at 2012-08-10 04:07:38 +0200
+Served asset /shared.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 10.0.2.2 at 2012-08-10 04:07:38 +0200
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/common.css?body=1" for 10.0.2.2 at 2012-08-10 04:07:38 +0200
+Served asset /common.css - 304 Not Modified (0ms)
+
+
+Started POST "/signup" for 10.0.2.2 at 2012-08-10 04:07:53 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fNT9fHT1bXGSidFa4Mq0DatUTxI5azaRFRC/kiSgUEc=", "user"=>{"name"=>"Ricardo Pontes", "email"=>"rpontes@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Quero me cadastrar"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'rpontes@gmail.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `users` (`created_at`, `email`, `name`, `password_hash`, `password_salt`, `updated_at`) VALUES ('2012-08-10 02:07:53', 'rpontes@gmail.com', 'Ricardo Pontes', '457546c4643513c6a711b14e7170157f0d4ffa6b', '54118dbdc497064059af726e85b7bf0deb02753e', '2012-08-10 02:07:53')[0m
+  [1m[35m (0.9ms)[0m  COMMIT
+Redirected to http://0.0.0.0:3000/login
+Completed 302 Found in 100ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/login" for 10.0.2.2 at 2012-08-10 04:07:53 +0200
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/window (2.2ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 39ms (Views: 38.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/window.css?body=1" for 10.0.2.2 at 2012-08-10 04:07:53 +0200
+Served asset /window.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/common.css?body=1" for 10.0.2.2 at 2012-08-10 04:07:53 +0200
+Served asset /common.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shared.css?body=1" for 10.0.2.2 at 2012-08-10 04:07:53 +0200
+Served asset /shared.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/logo.png" for 10.0.2.2 at 2012-08-10 04:07:53 +0200
+Served asset /logo.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/notice.png" for 10.0.2.2 at 2012-08-10 04:07:53 +0200
+Served asset /notice.png - 200 OK (45ms)
+
+
+Started POST "/login" for 10.0.2.2 at 2012-08-10 04:08:04 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fNT9fHT1bXGSidFa4Mq0DatUTxI5azaRFRC/kiSgUEc=", "email"=>"rpontes@gmail.com", "password"=>"[FILTERED]", "commit"=>"Acessar minha conta"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'rpontes@gmail.com' LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 50ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 10.0.2.2 at 2012-08-10 04:08:04 +0200
+Processing by BrandsController#index as HTML
+  Rendered brands/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered shared/_nav.html.erb (0.8ms)
+  Rendered shared/_header.html.erb (12.8ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 66ms (Views: 65.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/common.css?body=1" for 10.0.2.2 at 2012-08-10 04:08:05 +0200
+Served asset /common.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/site.css?body=1" for 10.0.2.2 at 2012-08-10 04:08:05 +0200
+Served asset /site.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shared.css?body=1" for 10.0.2.2 at 2012-08-10 04:08:05 +0200
+Served asset /shared.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 10.0.2.2 at 2012-08-10 04:08:05 +0200
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2012-08-10 04:08:05 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2012-08-10 04:08:08 +0200
+Served asset /application.css - 304 Not Modified (3ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.4ms)[0m  DROP DATABASE IF EXISTS `brandmanager_test`
+  [1m[36m (0.1ms)[0m  [1mCREATE DATABASE `brandmanager_test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`[0m
+  [1m[35m (3.2ms)[0m  CREATE TABLE `brands` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `numer_process` int(11) NOT NULL, `name` varchar(255) NOT NULL, `procedure` varchar(255), `date_rpi` date, `date_company` date, `deadline` date NOT NULL, `completed` tinyint(1), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (1.6ms)[0m  [1mCREATE TABLE `clients` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `telephone` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (1.7ms)[0m  CREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `email` varchar(255) NOT NULL, `password_hash` varchar(255) NOT NULL, `password_salt` varchar(255) NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (2.2ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (3.0ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20120809040846')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20120801025406')[0m
+  [1m[35m (0.5ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20120809040610')
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 10.0.2.2 at 2012-08-14 03:41:39 +0200
+Processing by BrandsController#index as HTML
+  Rendered brands/index.html.erb within layouts/application (27.1ms)
+  Rendered shared/_nav.html.erb (140.9ms)
+  Rendered shared/_header.html.erb (155.3ms)
+  Rendered shared/_flash_messages.html.erb (0.7ms)
+Completed 200 OK in 353ms (Views: 352.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/common.css?body=1" for 10.0.2.2 at 2012-08-14 03:41:40 +0200
+Served asset /common.css - 200 OK (4ms)
+
+
+Started GET "/assets/shared.css?body=1" for 10.0.2.2 at 2012-08-14 03:41:40 +0200
+Served asset /shared.css - 200 OK (6ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2012-08-14 03:41:40 +0200
+Served asset /application.css - 200 OK (16ms)
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2012-08-14 03:41:40 +0200
+Served asset /application.js - 200 OK (6ms)
+
+
+Started GET "/assets/logo.png" for 10.0.2.2 at 2012-08-14 03:41:40 +0200
+Served asset /logo.png - 200 OK (6ms)
+
+
+Started GET "/assets/site.css?body=1" for 10.0.2.2 at 2012-08-14 03:41:44 +0200
+Served asset /site.css - 200 OK (6ms)
+
+
+Started GET "/assets/sidebar-bg.png" for 10.0.2.2 at 2012-08-14 03:41:44 +0200
+Served asset /sidebar-bg.png - 200 OK (6ms)
+
+
+Started GET "/assets/bg.png" for 10.0.2.2 at 2012-08-14 03:41:44 +0200
+Served asset /bg.png - 200 OK (6ms)
+
+
+Started GET "/login" for 10.0.2.2 at 2012-08-14 03:41:50 +0200
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/window (2.8ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 56ms (Views: 56.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/window.css?body=1" for 10.0.2.2 at 2012-08-14 03:41:50 +0200
+Served asset /window.css - 200 OK (17ms)
+
+
+Started POST "/login" for 10.0.2.2 at 2012-08-14 03:42:06 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"P6vv7Qevw9TgjZ3DU4wSDPjw8Fduz4ufSIJcopIt0FM=", "email"=>"rpontes@gmail.com", "password"=>"[FILTERED]", "commit"=>"Acessar minha conta"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'rpontes@gmail.com' LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 158ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 10.0.2.2 at 2012-08-14 03:42:07 +0200
+Processing by BrandsController#index as HTML
+  Rendered brands/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered shared/_nav.html.erb (0.9ms)
+  Rendered shared/_header.html.erb (14.3ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 70ms (Views: 69.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/logout" for 10.0.2.2 at 2012-08-14 03:42:15 +0200
+Processing by SessionsController#destroy as HTML
+Redirected to http://0.0.0.0:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 10.0.2.2 at 2012-08-14 03:42:15 +0200
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/window (1.4ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 37ms (Views: 36.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 10.0.2.2 at 2012-08-14 03:42:20 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CBiswZbuqvBYkbwNhelTopRgE9A8sphfRzMSHUjdmSI=", "email"=>"rpontes@gmail.com", "password"=>"[FILTERED]", "commit"=>"Acessar minha conta"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'rpontes@gmail.com' LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 10.0.2.2 at 2012-08-14 03:42:20 +0200
+Processing by BrandsController#index as HTML
+  Rendered brands/index.html.erb within layouts/application (0.2ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered shared/_nav.html.erb (0.8ms)
+  Rendered shared/_header.html.erb (14.3ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 74ms (Views: 73.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 10.0.2.2 at 2012-08-14 03:42:25 +0200
+Processing by BrandsController#index as HTML
+  Rendered brands/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered shared/_nav.html.erb (0.8ms)
+  Rendered shared/_header.html.erb (14.2ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 68ms (Views: 67.5ms | ActiveRecord: 0.1ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 10.0.2.2 at 2012-08-14 04:25:54 +0200
+Processing by BrandsController#index as HTML
+  Rendered brands/index.html.erb within layouts/application (24.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered shared/_header.html.erb (267.2ms)
+Completed 500 Internal Server Error in 404ms
+
+ActionView::Template::Error ((/vagrant/brandmanager/config/locales/pt-BR/title.yml): found character that cannot start any token while scanning for the next token at line 10 column 5):
+    3: 
+    4:   <% if logged_in? %>
+    5:     <p>
+    6:       <%= t("login.welcome", :name => current_user.name) %>
+    7:     </p>
+    8:   <% end %>
+    9: 
+  app/views/shared/_header.html.erb:6:in `_app_views_shared__header_html_erb__267080840_73469790'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__1031762586_73552860'
+
+
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.2ms)
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2012-08-14 04:29:15 +0200
+Processing by BrandsController#index as HTML
+  Rendered brands/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered shared/_header.html.erb (134.4ms)
+Completed 500 Internal Server Error in 180ms
+
+ActionView::Template::Error ((/vagrant/brandmanager/config/locales/pt-BR/title.yml): found character that cannot start any token while scanning for the next token at line 10 column 5):
+    3: 
+    4:   <% if logged_in? %>
+    5:     <p>
+    6:       <%= t("login.welcome", :name => current_user.name) %>
+    7:     </p>
+    8:   <% end %>
+    9: 
+  app/views/shared/_header.html.erb:6:in `_app_views_shared__header_html_erb__267080840_73469790'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__1031762586_73552860'
+
+
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.8ms)
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.3ms)
+
+
+Started GET "/" for 10.0.2.2 at 2012-08-14 04:29:45 +0200
+Processing by BrandsController#index as HTML
+  Rendered brands/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered shared/_header.html.erb (146.8ms)
+Completed 500 Internal Server Error in 193ms
+
+ActionView::Template::Error ((/vagrant/brandmanager/config/locales/pt-BR/title.yml): found character that cannot start any token while scanning for the next token at line 10 column 1):
+    3: 
+    4:   <% if logged_in? %>
+    5:     <p>
+    6:       <%= t("login.welcome", :name => current_user.name) %>
+    7:     </p>
+    8:   <% end %>
+    9: 
+  app/views/shared/_header.html.erb:6:in `_app_views_shared__header_html_erb__267080840_73469790'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__1031762586_73552860'
+
+
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.5ms)
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2012-08-14 04:30:15 +0200
+Processing by BrandsController#index as HTML
+  Rendered brands/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered shared/_header.html.erb (140.0ms)
+Completed 500 Internal Server Error in 211ms
+
+ActionView::Template::Error ((/vagrant/brandmanager/config/locales/pt-BR/title.yml): found character that cannot start any token while scanning for the next token at line 10 column 1):
+    3: 
+    4:   <% if logged_in? %>
+    5:     <p>
+    6:       <%= t("login.welcome", :name => current_user.name) %>
+    7:     </p>
+    8:   <% end %>
+    9: 
+  app/views/shared/_header.html.erb:6:in `_app_views_shared__header_html_erb__267080840_73469790'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__1031762586_73552860'
+
+
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.6ms)
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2012-08-14 04:30:29 +0200
+Processing by BrandsController#index as HTML
+  Rendered brands/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered shared/_header.html.erb (141.6ms)
+Completed 500 Internal Server Error in 211ms
+
+ActionView::Template::Error ((/vagrant/brandmanager/config/locales/pt-BR/title.yml): found character that cannot start any token while scanning for the next token at line 11 column 1):
+    3: 
+    4:   <% if logged_in? %>
+    5:     <p>
+    6:       <%= t("login.welcome", :name => current_user.name) %>
+    7:     </p>
+    8:   <% end %>
+    9: 
+  app/views/shared/_header.html.erb:6:in `_app_views_shared__header_html_erb__267080840_73469790'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__1031762586_73552860'
+
+
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.9ms)
+
+
+Started GET "/" for 10.0.2.2 at 2012-08-14 04:31:39 +0200
+Processing by BrandsController#index as HTML
+  Rendered brands/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered shared/_nav.html.erb (1.7ms)
+  Rendered shared/_header.html.erb (141.2ms)
+  Rendered shared/_flash_messages.html.erb (0.5ms)
+Completed 200 OK in 234ms (Views: 232.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2012-08-14 04:31:40 +0200
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/shared.css?body=1" for 10.0.2.2 at 2012-08-14 04:31:40 +0200
+Served asset /shared.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2012-08-14 04:31:40 +0200
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/common.css?body=1" for 10.0.2.2 at 2012-08-14 04:31:40 +0200
+Served asset /common.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/logo.png" for 10.0.2.2 at 2012-08-14 04:31:40 +0200
+Served asset /logo.png - 304 Not Modified (7ms)
+
+
+Started GET "/assets/site.css?body=1" for 10.0.2.2 at 2012-08-14 04:31:40 +0200
+Served asset /site.css - 304 Not Modified (7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2012-08-14 04:32:12 +0200
+Processing by BrandsController#index as HTML
+  Rendered brands/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered shared/_header.html.erb (141.3ms)
+Completed 500 Internal Server Error in 217ms
+
+ActionView::Template::Error ((/vagrant/brandmanager/config/locales/pt-BR/title.yml): found character that cannot start any token while scanning for the next token at line 10 column 5):
+    3: 
+    4:   <% if logged_in? %>
+    5:     <p>
+    6:       <%= t("login.welcome", :name => current_user.name) %>
+    7:     </p>
+    8:   <% end %>
+    9: 
+  app/views/shared/_header.html.erb:6:in `_app_views_shared__header_html_erb__267080840_73469790'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__1031762586_73552860'
+
+
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.6ms)
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.1ms)
+
+
+Started GET "/" for 10.0.2.2 at 2012-08-14 04:32:43 +0200
+Processing by BrandsController#index as HTML
+  Rendered brands/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered shared/_header.html.erb (166.0ms)
+Completed 500 Internal Server Error in 216ms
+
+ActionView::Template::Error ((/vagrant/brandmanager/config/locales/pt-BR/title.yml): found character that cannot start any token while scanning for the next token at line 11 column 5):
+    3: 
+    4:   <% if logged_in? %>
+    5:     <p>
+    6:       <%= t("login.welcome", :name => current_user.name) %>
+    7:     </p>
+    8:   <% end %>
+    9: 
+  app/views/shared/_header.html.erb:6:in `_app_views_shared__header_html_erb__267080840_73469790'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__1031762586_73552860'
+
+
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.1ms)
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2012-08-14 04:32:53 +0200
+Processing by BrandsController#index as HTML
+  Rendered brands/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered shared/_nav.html.erb (1.5ms)
+  Rendered shared/_header.html.erb (170.5ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 228ms (Views: 226.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2012-08-14 04:32:54 +0200
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/shared.css?body=1" for 10.0.2.2 at 2012-08-14 04:32:54 +0200
+Served asset /shared.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/common.css?body=1" for 10.0.2.2 at 2012-08-14 04:32:54 +0200
+Served asset /common.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 10.0.2.2 at 2012-08-14 04:32:54 +0200
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2012-08-14 04:32:54 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/site.css?body=1" for 10.0.2.2 at 2012-08-14 04:32:54 +0200
+Served asset /site.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2012-08-14 04:33:33 +0200
+Processing by BrandsController#index as HTML
+  Rendered brands/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered shared/_nav.html.erb (0.8ms)
+  Rendered shared/_header.html.erb (170.1ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 230ms (Views: 228.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2012-08-14 04:33:33 +0200
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/shared.css?body=1" for 10.0.2.2 at 2012-08-14 04:33:34 +0200
+Served asset /shared.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/common.css?body=1" for 10.0.2.2 at 2012-08-14 04:33:34 +0200
+Served asset /common.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2012-08-14 04:33:34 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/logo.png" for 10.0.2.2 at 2012-08-14 04:33:34 +0200
+Served asset /logo.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/site.css?body=1" for 10.0.2.2 at 2012-08-14 04:33:34 +0200
+Served asset /site.css - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateUsers (20120801025406)
+Migrating to CreateBrands (20120809040610)
+Migrating to CreateClients (20120809040846)
+Migrating to AddAdminToUsers (20120814023641)
+  [1m[35m (4.7ms)[0m  ALTER TABLE `users` ADD `admin` tinyint(1) DEFAULT 0 NOT NULL
+  [1m[36m (1.1ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120814023641')[0m
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (2.7ms)[0m  DROP DATABASE IF EXISTS `brandmanager_test`
+  [1m[36m (0.1ms)[0m  [1mCREATE DATABASE `brandmanager_test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`[0m
+  [1m[35m (3.1ms)[0m  CREATE TABLE `brands` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `numer_process` int(11) NOT NULL, `name` varchar(255) NOT NULL, `procedure` varchar(255), `date_rpi` date, `date_company` date, `deadline` date NOT NULL, `completed` tinyint(1), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (1.7ms)[0m  [1mCREATE TABLE `clients` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `telephone` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (2.1ms)[0m  CREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `email` varchar(255) NOT NULL, `password_hash` varchar(255) NOT NULL, `password_salt` varchar(255) NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `admin` tinyint(1) DEFAULT 0 NOT NULL) ENGINE=InnoDB
+  [1m[36m (1.7ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (3.5ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20120814023641')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20120801025406')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20120809040610')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20120809040846')[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (3.7ms)[0m  DROP DATABASE IF EXISTS `brandmanager_test`
+  [1m[36m (0.1ms)[0m  [1mCREATE DATABASE `brandmanager_test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`[0m
+  [1m[35m (2.0ms)[0m  CREATE TABLE `brands` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `numer_process` int(11) NOT NULL, `name` varchar(255) NOT NULL, `procedure` varchar(255), `date_rpi` date, `date_company` date, `deadline` date NOT NULL, `completed` tinyint(1), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (1.9ms)[0m  [1mCREATE TABLE `clients` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `telephone` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (3.7ms)[0m  CREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `email` varchar(255) NOT NULL, `password_hash` varchar(255) NOT NULL, `password_salt` varchar(255) NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `admin` tinyint(1) DEFAULT 0 NOT NULL) ENGINE=InnoDB
+  [1m[36m (1.7ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (7.3ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20120814023641')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20120801025406')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20120809040610')
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20120809040846')[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (3.5ms)[0m  DROP DATABASE IF EXISTS `brandmanager_test`
+  [1m[36m (0.1ms)[0m  [1mCREATE DATABASE `brandmanager_test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`[0m
+  [1m[35m (4.4ms)[0m  CREATE TABLE `brands` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `numer_process` int(11) NOT NULL, `name` varchar(255) NOT NULL, `procedure` varchar(255), `date_rpi` date, `date_company` date, `deadline` date NOT NULL, `completed` tinyint(1), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (7.2ms)[0m  [1mCREATE TABLE `clients` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `telephone` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (2.5ms)[0m  CREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `email` varchar(255) NOT NULL, `password_hash` varchar(255) NOT NULL, `password_salt` varchar(255) NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `admin` tinyint(1) DEFAULT 0 NOT NULL) ENGINE=InnoDB
+  [1m[36m (1.6ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (3.0ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20120814023641')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20120801025406')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20120809040610')
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20120809040846')[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (3.4ms)[0m  DROP DATABASE IF EXISTS `brandmanager_test`
+  [1m[36m (0.1ms)[0m  [1mCREATE DATABASE `brandmanager_test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`[0m
+  [1m[35m (5.2ms)[0m  CREATE TABLE `brands` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `numer_process` int(11) NOT NULL, `name` varchar(255) NOT NULL, `procedure` varchar(255), `date_rpi` date, `date_company` date, `deadline` date NOT NULL, `completed` tinyint(1), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (2.0ms)[0m  [1mCREATE TABLE `clients` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `telephone` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (5.5ms)[0m  CREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) NOT NULL, `email` varchar(255) NOT NULL, `password_hash` varchar(255) NOT NULL, `password_salt` varchar(255) NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `admin` tinyint(1) DEFAULT 0 NOT NULL) ENGINE=InnoDB
+  [1m[36m (1.7ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (5.5ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20120814023641')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20120801025406')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20120809040610')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20120809040846')[0m
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 10.0.2.2 at 2012-08-14 05:24:55 +0200
+Processing by BrandsController#index as HTML
+  Rendered brands/index.html.erb within layouts/application (22.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered shared/_nav.html.erb (2.0ms)
+  Rendered shared/_header.html.erb (247.8ms)
+  Rendered shared/_flash_messages.html.erb (0.5ms)
+Completed 200 OK in 413ms (Views: 410.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/shared.css?body=1" for 10.0.2.2 at 2012-08-14 05:24:55 +0200
+Served asset /shared.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2012-08-14 05:24:55 +0200
+Served asset /application.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/site.css?body=1" for 10.0.2.2 at 2012-08-14 05:24:55 +0200
+Served asset /site.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2012-08-14 05:24:55 +0200
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/common.css?body=1" for 10.0.2.2 at 2012-08-14 05:24:56 +0200
+Served asset /common.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/logo.png" for 10.0.2.2 at 2012-08-14 05:24:56 +0200
+Served asset /logo.png - 304 Not Modified (8ms)
+
+
+Started GET "/" for 10.0.2.2 at 2012-08-14 05:24:58 +0200
+Processing by BrandsController#index as HTML
+  Rendered brands/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered shared/_nav.html.erb (0.7ms)
+  Rendered shared/_header.html.erb (12.5ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 69ms (Views: 68.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/shared.css?body=1" for 10.0.2.2 at 2012-08-14 05:24:58 +0200
+Served asset /shared.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2012-08-14 05:24:58 +0200
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/logo.png" for 10.0.2.2 at 2012-08-14 05:24:58 +0200
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/site.css?body=1" for 10.0.2.2 at 2012-08-14 05:24:58 +0200
+Served asset /site.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2012-08-14 05:24:58 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/common.css?body=1" for 10.0.2.2 at 2012-08-14 05:24:58 +0200
+Served asset /common.css - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 10.0.2.2 at 2012-08-14 05:45:21 +0200
+Processing by BrandsController#index as HTML
+  Rendered brands/index.html.erb within layouts/application (21.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered shared/_nav.html.erb (1.8ms)
+  Rendered shared/_header.html.erb (264.9ms)
+  Rendered shared/_flash_messages.html.erb (0.5ms)
+Completed 200 OK in 420ms (Views: 418.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/shared.css?body=1" for 10.0.2.2 at 2012-08-14 05:45:22 +0200
+Served asset /shared.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2012-08-14 05:45:22 +0200
+Served asset /application.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/site.css?body=1" for 10.0.2.2 at 2012-08-14 05:45:22 +0200
+Served asset /site.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/common.css?body=1" for 10.0.2.2 at 2012-08-14 05:45:22 +0200
+Served asset /common.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2012-08-14 05:45:22 +0200
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/logo.png" for 10.0.2.2 at 2012-08-14 05:45:22 +0200
+Served asset /logo.png - 304 Not Modified (5ms)
+
+
+Started GET "/assets/sidebar-bg.png" for 10.0.2.2 at 2012-08-14 05:45:22 +0200
+Served asset /sidebar-bg.png - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bg.png" for 10.0.2.2 at 2012-08-14 05:45:22 +0200
+Served asset /bg.png - 304 Not Modified (6ms)
+
+
+Started GET "/admin/clients" for 10.0.2.2 at 2012-08-14 05:45:29 +0200
+Processing by Admin::ClientsController#index as HTML
+Filter chain halted as :require_authentication rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/clients" for 10.0.2.2 at 2012-08-14 05:45:36 +0200
+Processing by Admin::ClientsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`email` = 'rpontes@gmail.com' LIMIT 1
+Completed 500 Internal Server Error in 32ms
+
+NoMethodError (undefined method `sorted_by_name' for #<Class:0xa2fb46c>):
+  app/controllers/admin/clients_controller.rb:4:in `index'
+
+
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.7ms)
+
+
+Started GET "/admin/clients" for 10.0.2.2 at 2012-08-14 05:46:50 +0200
+Processing by Admin::ClientsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'rpontes@gmail.com' LIMIT 1[0m
+  [1m[35mClient Load (0.2ms)[0m  SELECT `clients`.* FROM `clients` ORDER BY name asc
+  Rendered admin/clients/index.html.erb within layouts/application (3.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered shared/_nav.html.erb (1.0ms)
+  Rendered shared/_header.html.erb (14.7ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 164ms (Views: 111.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/common.css?body=1" for 10.0.2.2 at 2012-08-14 05:46:50 +0200
+Served asset /common.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/site.css?body=1" for 10.0.2.2 at 2012-08-14 05:46:50 +0200
+Served asset /site.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2012-08-14 05:46:50 +0200
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/logo.png" for 10.0.2.2 at 2012-08-14 05:46:50 +0200
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shared.css?body=1" for 10.0.2.2 at 2012-08-14 05:46:50 +0200
+Served asset /shared.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2012-08-14 05:46:51 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/admin/clients/new" for 10.0.2.2 at 2012-08-14 05:47:03 +0200
+Processing by Admin::ClientsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`email` = 'rpontes@gmail.com' LIMIT 1
+  Rendered admin/clients/_form.html.erb (27.1ms)
+  Rendered admin/clients/new.html.erb within layouts/application (41.7ms)
+Completed 500 Internal Server Error in 86ms
+
+ActionView::Template::Error (Missing partial shared/error_messages with {:locale=>[:"pt-BR"], :formats=>[:html], :handlers=>[:erb, :builder]}. Searched in:
+  * "/vagrant/brandmanager/app/views"
+):
+    1: <%= render "shared/error_messages", :record => form.object %>
+    2: 
+    3: <p>
+    4:   <%= form.label :name, t("form.client.name") %>
+  app/views/admin/clients/_form.html.erb:1:in `_app_views_admin_clients__form_html_erb__160565283_83816420'
+  app/views/admin/clients/new.html.erb:4:in `block in _app_views_admin_clients_new_html_erb___964373008_83828850'
+  app/views/admin/clients/new.html.erb:3:in `_app_views_admin_clients_new_html_erb___964373008_83828850'
+
+
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.5ms)
+
+
+Started GET "/admin/clients/new" for 10.0.2.2 at 2012-08-14 05:48:31 +0200
+Processing by Admin::ClientsController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'rpontes@gmail.com' LIMIT 1[0m
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  Rendered admin/clients/_form.html.erb (12.1ms)
+  Rendered admin/clients/new.html.erb within layouts/application (24.8ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered shared/_nav.html.erb (0.8ms)
+  Rendered shared/_header.html.erb (15.1ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 108ms (Views: 106.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/shared.css?body=1" for 10.0.2.2 at 2012-08-14 05:48:32 +0200
+Served asset /shared.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/common.css?body=1" for 10.0.2.2 at 2012-08-14 05:48:32 +0200
+Served asset /common.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/site.css?body=1" for 10.0.2.2 at 2012-08-14 05:48:32 +0200
+Served asset /site.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2012-08-14 05:48:32 +0200
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2012-08-14 05:48:32 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/logo.png" for 10.0.2.2 at 2012-08-14 05:48:32 +0200
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin/clients/new" for 10.0.2.2 at 2012-08-14 05:49:32 +0200
+Processing by Admin::ClientsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'rpontes@gmail.com' LIMIT 1[0m
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered admin/clients/_form.html.erb (11.9ms)
+  Rendered admin/clients/new.html.erb within layouts/application (156.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered shared/_nav.html.erb (0.8ms)
+  Rendered shared/_header.html.erb (15.3ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 300ms (Views: 239.6ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2012-08-14 05:49:32 +0200
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/shared.css?body=1" for 10.0.2.2 at 2012-08-14 05:49:32 +0200
+Served asset /shared.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/common.css?body=1" for 10.0.2.2 at 2012-08-14 05:49:32 +0200
+Served asset /common.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2012-08-14 05:49:32 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/logo.png" for 10.0.2.2 at 2012-08-14 05:49:33 +0200
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/site.css?body=1" for 10.0.2.2 at 2012-08-14 05:49:33 +0200
+Served asset /site.css - 304 Not Modified (0ms)
+
+
+Started GET "/admin/clients/new" for 10.0.2.2 at 2012-08-14 05:50:06 +0200
+Processing by Admin::ClientsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'rpontes@gmail.com' LIMIT 1[0m
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered admin/clients/_form.html.erb (12.7ms)
+  Rendered admin/clients/new.html.erb within layouts/application (25.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered shared/_nav.html.erb (0.7ms)
+  Rendered shared/_header.html.erb (12.8ms)
+  Rendered shared/_flash_messages.html.erb (0.0ms)
+Completed 200 OK in 103ms (Views: 101.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/shared.css?body=1" for 10.0.2.2 at 2012-08-14 05:50:06 +0200
+Served asset /shared.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2012-08-14 05:50:07 +0200
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/common.css?body=1" for 10.0.2.2 at 2012-08-14 05:50:07 +0200
+Served asset /common.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/site.css?body=1" for 10.0.2.2 at 2012-08-14 05:50:07 +0200
+Served asset /site.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 10.0.2.2 at 2012-08-14 05:50:07 +0200
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2012-08-14 05:50:07 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/admin/clients/new" for 10.0.2.2 at 2012-08-14 05:50:42 +0200
+Processing by Admin::ClientsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'rpontes@gmail.com' LIMIT 1[0m
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered admin/clients/_form.html.erb (13.4ms)
+  Rendered admin/clients/new.html.erb within layouts/application (26.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered shared/_nav.html.erb (0.7ms)
+  Rendered shared/_header.html.erb (12.8ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 107ms (Views: 105.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2012-08-14 05:50:43 +0200
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/shared.css?body=1" for 10.0.2.2 at 2012-08-14 05:50:43 +0200
+Served asset /shared.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/site.css?body=1" for 10.0.2.2 at 2012-08-14 05:50:43 +0200
+Served asset /site.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/common.css?body=1" for 10.0.2.2 at 2012-08-14 05:50:43 +0200
+Served asset /common.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 10.0.2.2 at 2012-08-14 05:50:43 +0200
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2012-08-14 05:50:43 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/admin/clients" for 10.0.2.2 at 2012-08-14 05:52:20 +0200
+Processing by Admin::ClientsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BCORQA8ifcWFcZ/YQKqi+ovQZfbm+RO0TuUHyU19jOk=", "client"=>{"name"=>"Company CO", "telephone"=>"4833333333"}, "commit"=>"Criar Client"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'rpontes@gmail.com' LIMIT 1[0m
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `save' for nil:NilClass):
+  app/controllers/admin/clients_controller.rb:14:in `create'
+
+
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.0ms)
+
+
+Started POST "/admin/clients" for 10.0.2.2 at 2012-08-14 05:57:15 +0200
+Processing by Admin::ClientsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BCORQA8ifcWFcZ/YQKqi+ovQZfbm+RO0TuUHyU19jOk=", "client"=>{"name"=>"Company CO", "telephone"=>"4833333333"}, "commit"=>"Criar Client"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`email` = 'rpontes@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `clients` (`created_at`, `name`, `telephone`, `updated_at`) VALUES ('2012-08-14 03:57:15', 'Company CO', '4833333333', '2012-08-14 03:57:15')
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/admin/clients
+Completed 302 Found in 74ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/admin/clients" for 10.0.2.2 at 2012-08-14 05:57:15 +0200
+Processing by Admin::ClientsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`email` = 'rpontes@gmail.com' LIMIT 1
+  [1m[36mClient Load (0.4ms)[0m  [1mSELECT `clients`.* FROM `clients` ORDER BY name asc[0m
+  Rendered admin/clients/index.html.erb within layouts/application (2.8ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered shared/_nav.html.erb (0.7ms)
+  Rendered shared/_header.html.erb (12.7ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 84ms (Views: 81.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2012-08-14 05:57:16 +0200
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/logo.png" for 10.0.2.2 at 2012-08-14 05:57:16 +0200
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shared.css?body=1" for 10.0.2.2 at 2012-08-14 05:57:16 +0200
+Served asset /shared.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/common.css?body=1" for 10.0.2.2 at 2012-08-14 05:57:16 +0200
+Served asset /common.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2012-08-14 05:57:16 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/site.css?body=1" for 10.0.2.2 at 2012-08-14 05:57:16 +0200
+Served asset /site.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notice.png" for 10.0.2.2 at 2012-08-14 05:57:16 +0200
+Served asset /notice.png - 200 OK (7ms)
+
+
+Started GET "/admin/clients" for 10.0.2.2 at 2012-08-14 05:58:35 +0200
+Processing by Admin::ClientsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'rpontes@gmail.com' LIMIT 1[0m
+  [1m[35mClient Load (0.1ms)[0m  SELECT `clients`.* FROM `clients` ORDER BY name asc
+  Rendered admin/clients/index.html.erb within layouts/application (114.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered shared/_nav.html.erb (0.7ms)
+  Rendered shared/_header.html.erb (14.1ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 245ms (Views: 194.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/shared.css?body=1" for 10.0.2.2 at 2012-08-14 05:58:36 +0200
+Served asset /shared.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/common.css?body=1" for 10.0.2.2 at 2012-08-14 05:58:36 +0200
+Served asset /common.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2012-08-14 05:58:36 +0200
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/site.css?body=1" for 10.0.2.2 at 2012-08-14 05:58:36 +0200
+Served asset /site.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2012-08-14 05:58:36 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/logo.png" for 10.0.2.2 at 2012-08-14 05:58:36 +0200
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin/clients/1/edit" for 10.0.2.2 at 2012-08-14 05:58:38 +0200
+Processing by Admin::ClientsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`email` = 'rpontes@gmail.com' LIMIT 1
+  [1m[36mClient Load (0.2ms)[0m  [1mSELECT `clients`.* FROM `clients` WHERE `clients`.`id` = 1 LIMIT 1[0m
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered admin/clients/_form.html.erb (12.0ms)
+  Rendered admin/clients/edit.html.erb within layouts/application (25.8ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered shared/_nav.html.erb (0.8ms)
+  Rendered shared/_header.html.erb (14.3ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 110ms (Views: 107.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2012-08-14 05:58:38 +0200
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/site.css?body=1" for 10.0.2.2 at 2012-08-14 05:58:38 +0200
+Served asset /site.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 10.0.2.2 at 2012-08-14 05:58:38 +0200
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2012-08-14 05:58:38 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/shared.css?body=1" for 10.0.2.2 at 2012-08-14 05:58:39 +0200
+Served asset /shared.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/common.css?body=1" for 10.0.2.2 at 2012-08-14 05:58:39 +0200
+Served asset /common.css - 304 Not Modified (0ms)
+
+
+Started PUT "/admin/clients/1" for 10.0.2.2 at 2012-08-14 05:58:47 +0200
+Processing by Admin::ClientsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BCORQA8ifcWFcZ/YQKqi+ovQZfbm+RO0TuUHyU19jOk=", "client"=>{"name"=>"Company SA", "telephone"=>"4833333333"}, "commit"=>"Atualizar Client", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'rpontes@gmail.com' LIMIT 1[0m
+  [1m[35mClient Load (0.1ms)[0m  SELECT `clients`.* FROM `clients` WHERE `clients`.`id` = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  UPDATE `clients` SET `name` = 'Company SA', `updated_at` = '2012-08-14 03:58:47' WHERE `clients`.`id` = 1
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/admin/clients
+Completed 302 Found in 8ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/admin/clients" for 10.0.2.2 at 2012-08-14 05:58:47 +0200
+Processing by Admin::ClientsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`email` = 'rpontes@gmail.com' LIMIT 1
+  [1m[36mClient Load (0.3ms)[0m  [1mSELECT `clients`.* FROM `clients` ORDER BY name asc[0m
+  Rendered admin/clients/index.html.erb within layouts/application (2.4ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered shared/_nav.html.erb (0.7ms)
+  Rendered shared/_header.html.erb (13.1ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 82ms (Views: 80.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2012-08-14 05:58:47 +0200
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/shared.css?body=1" for 10.0.2.2 at 2012-08-14 05:58:47 +0200
+Served asset /shared.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 10.0.2.2 at 2012-08-14 05:58:47 +0200
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/site.css?body=1" for 10.0.2.2 at 2012-08-14 05:58:47 +0200
+Served asset /site.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/common.css?body=1" for 10.0.2.2 at 2012-08-14 05:58:47 +0200
+Served asset /common.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2012-08-14 05:58:47 +0200
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/admin/clients/1/edit" for 10.0.2.2 at 2012-08-14 06:00:40 +0200
+Processing by Admin::ClientsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'rpontes@gmail.com' LIMIT 1[0m
+  [1m[35mClient Load (0.2ms)[0m  SELECT `clients`.* FROM `clients` WHERE `clients`.`id` = 1 LIMIT 1
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered admin/clients/_form.html.erb (13.0ms)
+  Rendered admin/clients/edit.html.erb within layouts/application (179.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered shared/_nav.html.erb (0.8ms)
+  Rendered shared/_header.html.erb (12.8ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 317ms (Views: 260.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2012-08-14 06:00:41 +0200
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/common.css?body=1" for 10.0.2.2 at 2012-08-14 06:00:41 +0200
+Served asset /common.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shared.css?body=1" for 10.0.2.2 at 2012-08-14 06:00:41 +0200
+Served asset /shared.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/site.css?body=1" for 10.0.2.2 at 2012-08-14 06:00:41 +0200
+Served asset /site.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2012-08-14 06:00:41 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/logo.png" for 10.0.2.2 at 2012-08-14 06:00:41 +0200
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started PUT "/admin/clients/1" for 10.0.2.2 at 2012-08-14 06:00:46 +0200
+Processing by Admin::ClientsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BCORQA8ifcWFcZ/YQKqi+ovQZfbm+RO0TuUHyU19jOk=", "client"=>{"name"=>"Company CO", "telephone"=>"4833333333"}, "commit"=>"Atualizar Client", "id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`email` = 'rpontes@gmail.com' LIMIT 1
+  [1m[36mClient Load (0.1ms)[0m  [1mSELECT `clients`.* FROM `clients` WHERE `clients`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mUPDATE `clients` SET `name` = 'Company CO', `updated_at` = '2012-08-14 04:00:47' WHERE `clients`.`id` = 1[0m
+  [1m[35m (0.9ms)[0m  COMMIT
+Redirected to http://0.0.0.0:3000/admin/clients
+Completed 302 Found in 7ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/admin/clients" for 10.0.2.2 at 2012-08-14 06:00:47 +0200
+Processing by Admin::ClientsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'rpontes@gmail.com' LIMIT 1[0m
+  [1m[35mClient Load (0.3ms)[0m  SELECT `clients`.* FROM `clients` ORDER BY name asc
+  Rendered admin/clients/index.html.erb within layouts/application (2.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered shared/_nav.html.erb (0.7ms)
+  Rendered shared/_header.html.erb (13.5ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 80ms (Views: 78.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2012-08-14 06:00:47 +0200
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/common.css?body=1" for 10.0.2.2 at 2012-08-14 06:00:47 +0200
+Served asset /common.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/site.css?body=1" for 10.0.2.2 at 2012-08-14 06:00:47 +0200
+Served asset /site.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shared.css?body=1" for 10.0.2.2 at 2012-08-14 06:00:47 +0200
+Served asset /shared.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 10.0.2.2 at 2012-08-14 06:00:47 +0200
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2012-08-14 06:00:47 +0200
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/admin/clients/1/remove" for 10.0.2.2 at 2012-08-14 06:00:51 +0200
+Processing by Admin::ClientsController#remove as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`email` = 'rpontes@gmail.com' LIMIT 1
+  [1m[36mClient Load (0.2ms)[0m  [1mSELECT `clients`.* FROM `clients` WHERE `clients`.`id` = 1 LIMIT 1[0m
+  Rendered admin/clients/remove.html.erb within layouts/application (1.8ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered shared/_nav.html.erb (0.5ms)
+  Rendered shared/_header.html.erb (12.6ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 82ms (Views: 79.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2012-08-14 06:00:51 +0200
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/common.css?body=1" for 10.0.2.2 at 2012-08-14 06:00:51 +0200
+Served asset /common.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 10.0.2.2 at 2012-08-14 06:00:52 +0200
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/site.css?body=1" for 10.0.2.2 at 2012-08-14 06:00:52 +0200
+Served asset /site.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shared.css?body=1" for 10.0.2.2 at 2012-08-14 06:00:52 +0200
+Served asset /shared.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2012-08-14 06:00:52 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started DELETE "/admin/clients/1" for 10.0.2.2 at 2012-08-14 06:00:58 +0200
+Processing by Admin::ClientsController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BCORQA8ifcWFcZ/YQKqi+ovQZfbm+RO0TuUHyU19jOk=", "commit"=>"Sim, eu quero remover!", "id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'rpontes@gmail.com' LIMIT 1[0m
+  [1m[35mClient Load (0.1ms)[0m  SELECT `clients`.* FROM `clients` WHERE `clients`.`id` = 1 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM `clients` WHERE `clients`.`id` = 1
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/admin/clients
+Completed 302 Found in 5ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/admin/clients" for 10.0.2.2 at 2012-08-14 06:00:58 +0200
+Processing by Admin::ClientsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`email` = 'rpontes@gmail.com' LIMIT 1
+  [1m[36mClient Load (0.3ms)[0m  [1mSELECT `clients`.* FROM `clients` ORDER BY name asc[0m
+  Rendered admin/clients/index.html.erb within layouts/application (1.4ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered shared/_nav.html.erb (0.7ms)
+  Rendered shared/_header.html.erb (12.3ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 79ms (Views: 76.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2012-08-14 06:00:59 +0200
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/shared.css?body=1" for 10.0.2.2 at 2012-08-14 06:00:59 +0200
+Served asset /shared.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 10.0.2.2 at 2012-08-14 06:00:59 +0200
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/site.css?body=1" for 10.0.2.2 at 2012-08-14 06:00:59 +0200
+Served asset /site.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2012-08-14 06:00:59 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/common.css?body=1" for 10.0.2.2 at 2012-08-14 06:00:59 +0200
+Served asset /common.css - 304 Not Modified (0ms)
