@@ -7,5 +7,7 @@ class CreateUsers < ActiveRecord::Migration
     	t.string :password_salt, :null => false
       t.timestamps
     end
+
+    add_index :users, :email, :unique => true
   end
 end

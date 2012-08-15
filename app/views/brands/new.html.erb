@@ -1,0 +1,51 @@
+<h1><%= t("title.brands.new") %></h1>
+
+<%= form_for @brand do |f| %>
+  <%= render "shared/error_messages", :record => @brand %>
+
+  <p>
+    <%= f.label :number_process, t("form.brand.number_process") %>
+    <%= f.text_field :number_process %>
+  </p>
+
+  <p>
+    <%= f.label :name, t("form.brand.name") %>
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.label :procedure, t("form.brand.procedure") %>
+    <%= f.text_area :name %>
+  </p>
+
+  <p>
+    <%= f.label :date_rpi, t("form.brand.date_rpi") %>
+    <%= f.text_field :date_rpi %>
+  </p>
+
+  <p>
+    <%= f.label :date_company, t("form.brand.date_company") %>
+    <%= f.text_field :date_company %>
+  </p>
+
+  <p>
+    <%= f.label :deadline, t("form.brand.deadline") %>
+    <%= f.text_field :deadline %>
+  </p>
+
+  <p>
+    <%= f.label :completed, t("form.brand.completed") %>
+    <%= f.check_box :completed %>
+  </p>
+
+  <p>
+    <%= f.label :client_id, t("form.brand.client") %>
+    <%= f.collection_select :client_id, @clients,
+      :id, :name, :prompt => t("client.prompt_field")
+    %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

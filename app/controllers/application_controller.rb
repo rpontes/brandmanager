@@ -10,4 +10,9 @@ class ApplicationController < ActionController::Base
   def logged_in?
     current_user != nil
   end
+
+  def require_authentication
+    redirect_to login_path,
+      :alert => t("flash.login.required") unless logged_in?
+  end
 end

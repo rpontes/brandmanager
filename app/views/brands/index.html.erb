@@ -1,5 +1,4 @@
-<h1>Hello there!</h1>
+<h1><%= t("title.brands.index") %></h1>
 
-<% content_for :sidebar do %>
-	<h1>Sidebar</h1>
-<% end %>
+<%= render @brands %>
+<%= paginate @brands %>

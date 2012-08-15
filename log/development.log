@@ -1988,3 +1988,177 @@ Served asset /application.js - 304 Not Modified (1ms)
 
 Started GET "/assets/common.css?body=1" for 10.0.2.2 at 2012-08-14 06:00:59 +0200
 Served asset /common.css - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateUsers (20120801025406)
+Migrating to CreateBrands (20120809040610)
+Migrating to CreateClients (20120809040846)
+Migrating to AddAdminToUsers (20120814023641)
+  [1m[35m (0.1ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 10.0.2.2 at 2012-08-15 06:19:52 +0200
+
+ActionController::RoutingError (undefined method `attr_acessible' for #<Class:0x9dc5c40>):
+  app/models/brand.rb:2:in `<class:Brand>'
+  app/models/brand.rb:1:in `<top (required)>'
+  app/controllers/brands_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (8.2ms)
+
+
+Started GET "/" for 10.0.2.2 at 2012-08-15 06:20:39 +0200
+Processing by BrandsController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+NameError (undefined local variable or method `require_authentication' for #<BrandsController:0xaf037dc>):
+  activesupport (3.2.6) lib/active_support/callbacks.rb:418:in `_run__24796113__process_action__811112221__callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.6) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.6) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.6) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.6) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.6) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.6) lib/action_controller/metal/params_wrapper.rb:206:in `process_action'
+  activerecord (3.2.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.6) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.6) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.6) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.6) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.6) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.6) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.6) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `_run__468104110__call__629699183__callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.6) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.6) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.6) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.6) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.6) lib/rails/engine.rb:479:in `call'
+  railties (3.2.6) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.6) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/vagrant/local/ruby/1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/vagrant/local/ruby/1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/vagrant/local/ruby/1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2012-08-15 06:23:51 +0200
+Processing by BrandsController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+NameError (undefined local variable or method `logged_in' for #<BrandsController:0xae03e68>):
+  app/controllers/application_controller.rb:16:in `require_authentication'
+
+
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2012-08-15 06:24:03 +0200
+Processing by BrandsController#index as HTML
+Redirected to http://0.0.0.0:3000/login
+Filter chain halted as :require_authentication rendered or redirected
+Completed 302 Found in 140ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 10.0.2.2 at 2012-08-15 06:24:03 +0200
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/window (2.9ms)
+  Rendered shared/_flash_messages.html.erb (0.5ms)
+Completed 200 OK in 65ms (Views: 64.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/shared.css?body=1" for 10.0.2.2 at 2012-08-15 06:24:03 +0200
+Served asset /shared.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/common.css?body=1" for 10.0.2.2 at 2012-08-15 06:24:03 +0200
+Served asset /common.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/window.css?body=1" for 10.0.2.2 at 2012-08-15 06:24:04 +0200
+Served asset /window.css - 200 OK (15ms)
+
+
+Started GET "/assets/logo.png" for 10.0.2.2 at 2012-08-15 06:24:04 +0200
+Served asset /logo.png - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bg.png" for 10.0.2.2 at 2012-08-15 06:24:04 +0200
+Served asset /bg.png - 304 Not Modified (5ms)
+
+
+Started GET "/assets/alert.png" for 10.0.2.2 at 2012-08-15 06:24:04 +0200
+Served asset /alert.png - 200 OK (5ms)
+
+
+Started POST "/login" for 10.0.2.2 at 2012-08-15 06:24:12 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SWKeiux/BkjCoERXKGXpOtBaR1qfhAdvpnrSfG7V/g8=", "email"=>"rpontes@gmail.com", "password"=>"[FILTERED]", "commit"=>"Acessar minha conta"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'rpontes@gmail.com' LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 97ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 10.0.2.2 at 2012-08-15 06:24:12 +0200
+Processing by BrandsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered brands/index.html.erb within layouts/application (40.3ms)
+Completed 500 Internal Server Error in 78ms
+
+ActionView::Template::Error ('nil' is not an ActiveModel-compatible object that returns a valid partial path.):
+    1: <h1><%= t("title.brands.index") %></h1>
+    2: 
+    3: <%= render @brands %>
+    4: <%= paginate @brands %>
+  app/views/brands/index.html.erb:3:in `_app_views_brands_index_html_erb__299602857_86525730'
+
+
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.2ms)
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/vagrant/local/ruby/gems/gems/actionpack-3.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.3ms)

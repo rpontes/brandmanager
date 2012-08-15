@@ -7,6 +7,8 @@ class User < ActiveRecord::Base
   validates_format_of :email, :with => /\A.+@.+\Z/
   validates_uniqueness_of :email
 
+  has_many :brands
+
   def password=(password)
     PasswordEncryptor.generate_hash_and_salt(self, password)
     @password = password

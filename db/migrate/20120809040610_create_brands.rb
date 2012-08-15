@@ -1,7 +1,7 @@
 class CreateBrands < ActiveRecord::Migration
   def change
     create_table :brands do |t|
-    	t.integer :numer_process, :null => false
+    	t.integer :number_process, :null => false
     	t.string :name, :null => false
     	t.string :procedure
     	t.date :date_rpi
@@ -10,5 +10,8 @@ class CreateBrands < ActiveRecord::Migration
     	t.boolean :completed
       t.timestamps
     end
+
+    add_index :brands, :user_id
+    add_index :brands, :client_id
   end
 end
