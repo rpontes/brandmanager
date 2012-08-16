@@ -1,7 +1,7 @@
 pt-BR:
   signup:
     about_html: |
-      Mais 1 minuto e você poderá usar o Hackerboard.
+      Mais 1 minuto e você poderá usar o Brandmanager.
       Preencha os campos abaixo e nós iremos criar sua conta.
       Já é cadastrado?
       <a href="%{url}">Faça o login agora!</a>

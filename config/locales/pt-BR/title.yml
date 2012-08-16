@@ -10,3 +10,6 @@ pt-BR:
       clients:
       index: "Clientes"
       new: "Criar Cliente"
+
+    brands:
+      index: "Marcas"

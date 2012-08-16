@@ -14,7 +14,7 @@ class UsersController < ApplicationController
 		@user = User.new(params[:user])
 
 		if @user.save
-      Signup.process(@user)
+      #Signup.process(@user)
 
 			redirect_to login_path,
         :notice => t("flash.users.create.notice")

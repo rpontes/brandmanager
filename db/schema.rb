@@ -14,8 +14,10 @@
 ActiveRecord::Schema.define(:version => 20120814023641) do
 
   create_table "brands", :force => true do |t|
-    t.integer  "numer_process", :null => false
+    t.integer  "number_process", :null => false
     t.string   "name",          :null => false
+    t.integer  "client_id",     :null => false
+    t.integer  "user_id",   :null => false
     t.string   "procedure"
     t.date     "date_rpi"
     t.date     "date_company"
@@ -24,6 +26,9 @@ ActiveRecord::Schema.define(:version => 20120814023641) do
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
   end
+
+  add_index "brands", ["client_id"], :name => "index_brands_on_client_id"
+  add_index "brands", ["user_id"], :name => "index_brands_on_user_id"
 
   create_table "clients", :force => true do |t|
     t.string   "name",       :null => false
@@ -41,5 +46,7 @@ ActiveRecord::Schema.define(:version => 20120814023641) do
     t.datetime "updated_at",                       :null => false
     t.boolean  "admin",         :default => false, :null => false
   end
+
+  add_index "users", ["email"], :name => "index_users_on_email", :unique => true
 
 end

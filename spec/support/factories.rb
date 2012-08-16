@@ -9,6 +9,7 @@ FactoryGirl.define do
   factory :client do
     sequence(:name) {|n| "Client #{n}"}
     telephone "4833333333"
+  end
 
   preload do
     factory(:john_doe) {FactoryGirl.create(:user)}
